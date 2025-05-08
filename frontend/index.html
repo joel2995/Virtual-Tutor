@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dress Customization - Upload</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Dress Customization Tool</h1>
+    </header>
+    
+    <main>
+        <section class="upload-section">
+            <h2>Upload Your Photo</h2>
+            <p>Please upload a full-body photo to get accurate measurements</p>
+            
+            <form id="uploadForm">
+                <input type="file" id="photo" accept="image/*" hidden>
+                <div id="filePreview" class="file-preview">
+                    <div class="upload-placeholder">
+                        <span class="upload-icon">📷</span>
+                        <p>Drag & drop your photo here or click to browse</p>
+                    </div>
+                </div>
+                
+                <button type="submit" id="submitBtn" class="primary-btn">Process Image</button>
+            </form>
+            
+            <div id="loadingIndicator" class="loading-indicator">
+                <div class="spinner"></div>
+                <p>Processing your image...</p>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2023 Dress Customization Tool</p>
+    </footer>
+    
+    <script src="app.js"></script>
+</body>
+</html>

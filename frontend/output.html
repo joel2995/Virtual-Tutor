@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Custom Clothing Results</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="output.js"></script>
+</head>
+<body class="results-page">
+    <header>
+        <h1>Your Custom Clothing Results</h1>
+        <div class="back-link">
+            <a href="index.html" id="backToHome">← Back to Home</a>
+        </div>
+    </header>
+    
+    <main>
+        <section id="measurementsSection" class="results-section">
+            <div class="card">
+                <h2>Your Body Measurements</h2>
+                <div id="bodyMeasurements" class="content-container"></div>
+            </div>
+        </section>
+        
+        <section id="customizationSection" class="results-section">
+            <div class="card">
+                <h2>Customize Your Dress</h2>
+                <form id="customizationForm">
+                    <div class="form-group">
+                        <label for="promptInput">Describe the dress you want:</label>
+                        <textarea id="promptInput" rows="4" placeholder="E.g., A red evening gown with lace details and a sweetheart neckline"></textarea>
+                    </div>
+                    
+                    <button type="submit" id="customizeBtn" class="primary-btn">Generate Stitching Instructions</button>
+                </form>
+                
+                <div id="customizationLoading" class="loading-indicator">
+                    <div class="spinner"></div>
+                    <p>Generating your custom dress design...</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="fabricRequirementsSection" class="results-section" style="display: none;">
+            <div class="card">
+                <h2>Fabric Requirements</h2>
+                <div id="fabricRequirements" class="content-container"></div>
+            </div>
+        </section>
+        
+        <section id="customPatternSection" class="results-section" style="display: none;">
+            <div class="card">
+                <h2>Custom Pattern Measurements</h2>
+                <div id="customPatternMeasurements" class="content-container"></div>
+            </div>
+        </section>
+        
+        <section id="stitchingProcessSection" class="results-section" style="display: none;">
+            <div class="card">
+                <h2>Stitching Process</h2>
+                <div id="stitchingProcess" class="content-container"></div>
+            </div>
+        </section>
+        
+        <section id="imageResultsSection" class="results-section" style="display: none;">
+            <div class="card">
+                <h2>Reference Images</h2>
+                <div id="imageResults" class="content-container image-gallery"></div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2023 Custom Clothing Tool</p>
+    </footer>
+</body>
+</html>
